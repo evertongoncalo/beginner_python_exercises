@@ -94,7 +94,6 @@ def inicio():
 
         elif inicio[0] == 'n':
             print("ok até a próxima!!")
-            print('Placar final: ')
         else:
             print('digite dados validos...')
 
