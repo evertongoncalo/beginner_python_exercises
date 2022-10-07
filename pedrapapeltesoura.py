@@ -66,9 +66,9 @@ def jogo():
                 print(
                     f'## Placar Final : Você[ {placarplay1} ] X [ {placarcom} ] COM ##')
                 if placarplay1 > placarcom:
-                    print('PARABÉNS VOCE VENCEU!!!')
+                    print('\u001b[32mPARABÉNS VOCE VENCEU!!!\u001b[0m')
                 elif placarcom > placarplay1:
-                    print('INFELIZMENTE VOCE PERDEU!!!')
+                    print('\u001b[31mINFELIZMENTE VOCE PERDEU!!!\u001b[0m')
                 else:
                     print('JOGO EMPATADO!')
                 break
@@ -83,9 +83,9 @@ def jogo():
 def inicio():
     try:
         print(40 * '#')
-        print(9 * '#', 'BEM-VINDO AO JOKENPY', 9 * '#')
+        print(9 * '#', '\u001b[32mBEM-VINDO AO JOKENPY\u001b[0m', 9 * '#')
         print(40 * '#')
-        print('<<< DESEJA INICIAR O GAME? >>>')
+        print('    <<< DESEJA INICIAR O GAME? >>>')
         inicio = input('[S]IM / [N]AO ').lower()
         if inicio[0] == 's':
             print('vamos comecar...')
